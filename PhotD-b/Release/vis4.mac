@@ -1,0 +1,193 @@
+/control/verbose 2
+/run/verbose 1
+/run/printProgress 5000
+#########################
+
+##Cs-137
+#/gps/position 0. 0. 44.6 mm	 
+#/gps/energy 0 keV
+#/gps/particle ion 
+#/gps/ion 55 137 0  0
+
+
+##Backgrnd
+#/gps/position 0. 0. -16.6 mm
+#/gps/pos/type Volume
+#/gps/pos/shape Cylinder
+#/gps/pos/radius 60. mm
+#/gps/pos/inner_radius 46. mm
+#/gps/pos/halfz 62. mm
+#/gps/pos/rot1 1 0 0 
+#/gps/pos/rot2 0 1 0
+#/gps/pos/confine Bkgrd
+#/gps/energy 0 keV
+#/gps/particle ion 
+##/gps/ion 83 214 0  0  ###Bi-214
+#/gps/ion 82 214 0  0  ###Pb-214
+
+#/gps/source/add 1.
+#/gps/position 0. 0. 52.4 mm
+#/gps/pos/type Volume
+#/gps/pos/shape Cylinder
+#/gps/pos/radius 60. mm
+#/gps/pos/inner_radius 0. mm
+#/gps/pos/halfz 7. mm
+#/gps/pos/rot1 1 0 0 
+#/gps/pos/rot2 0 1 0
+#/gps/pos/confine BkgrdLow
+#/gps/energy 0 keV
+#/gps/particle ion 
+##/gps/ion 83 214 0  0  ###Bi-214
+#/gps/ion 82 214 0  0  ###Pb-214
+
+#/gps/source/add 2.
+#/gps/position 0. 0. -85.6 mm
+#/gps/pos/type Volume
+#/gps/pos/shape Cylinder
+#/gps/pos/radius 60. mm
+#/gps/pos/inner_radius 0. mm
+#/gps/pos/halfz 7. mm
+#/gps/pos/rot1 1 0 0 
+#/gps/pos/rot2 0 1 0
+#/gps/pos/confine BkgrdUp
+#/gps/energy 0 keV
+#/gps/particle ion 
+##/gps/ion 83 214 0  0  ###Bi-214
+#/gps/ion 82 214 0  0  ###Pb-214
+
+#/gps/source/list
+#/gps/source/multiplevertex true
+
+
+
+##CuFin
+#/gps/position 0. 0. 49.9 mm
+#/gps/pos/type Volume
+#/gps/pos/shape Para
+#/gps/pos/halfx 49.5 mm
+#/gps/pos/halfy 24.75 mm
+#/gps/pos/halfz 4.5 mm
+#/gps/pos/rot1 1 0 0 
+#/gps/pos/rot2 0 1 0 
+#/gps/pos/confine CuFin
+#/gps/ang/type iso
+#/gps/particle gamma
+#/gps/energy 609 keV
+#/gps/energy 911 keV
+#/gps/energy 1460 keV
+#/gps/energy 2614 keV
+
+
+
+##MoO3Fomos
+#/gps/position 0. 0. 50.7 mm
+#/gps/pos/type Volume
+#/gps/pos/shape Para
+#/gps/pos/halfx 70.0 mm
+#/gps/pos/halfy 70.0 mm
+#/gps/pos/halfz 6 mm
+#/gps/pos/rot1 1 0 0 
+#/gps/pos/rot2 0 1 0 
+#/gps/pos/confine MoO3Fomos
+#/gps/ang/type iso
+#/gps/particle gamma
+#/gps/energy 609 keV
+#/gps/energy 911 keV
+#/gps/energy 1460 keV
+#/gps/energy 2614 keV
+#/gps/energy 662 keV
+
+
+##NdOx
+#/gps/position 0. 0. 50.7 mm
+#/gps/pos/type Volume
+#/gps/pos/shape Para
+#/gps/pos/halfx 65.0 mm
+#/gps/pos/halfy 65.0 mm
+#/gps/pos/halfz 6 mm
+#/gps/pos/rot1 1 0 0 
+#/gps/pos/rot2 0 1 0 
+#/gps/pos/confine NdOXi
+#/gps/ang/type iso
+#/gps/particle gamma
+#/gps/energy 609 keV
+#/gps/energy 911 keV
+#/gps/energy 1460 keV
+#/gps/energy 2614 keV
+
+##CMOKR
+#/gps/position 0. 0. 51.4 mm
+#/gps/pos/type Volume
+#/gps/pos/shape Para
+#/gps/pos/halfx 60.0 mm
+#/gps/pos/halfy 70.0 mm
+#/gps/pos/halfz 7 mm
+#/gps/pos/rot1 1 0 0 
+#/gps/pos/rot2 0 1 0 
+#/gps/pos/confine CMOKR
+#/gps/ang/type iso
+#/gps/particle gamma
+##/gps/energy 609 keV
+##/gps/energy 911 keV
+##/gps/energy 1460 keV
+##/gps/energy 2614 keV
+#/gps/energy 186 keV
+
+#/run/beamOn 100000
+
+
+##Na-22
+#/gps/position 26. 26. 56.4 mm	 
+#/gps/energy 0 keV
+#/gps/particle ion 
+#/gps/ion 11 22 0  0
+
+#/gps/position 26. 26. 56.4 mm
+#/gps/ang/type iso
+#/gps/particle gamma
+#/gps/energy 1274.537 keV
+
+
+##PbFin
+#/gps/position 0. 0. 54.2 mm
+#/gps/pos/type Volume
+#/gps/pos/shape Para
+#/gps/pos/halfx 49.5 mm
+#/gps/pos/halfy 24.5 mm
+#/gps/pos/halfz 4.5 mm
+#/gps/pos/rot1 1 0 0 
+#/gps/pos/rot2 0 1 0 
+#/gps/pos/confine PbFin
+#/gps/ang/type iso
+#/gps/energy 0 keV
+#/gps/particle ion 
+#/gps/ion 82 214 0  0
+#/gps/particle gamma
+#/gps/energy 609 keV
+##/gps/energy 911 keV
+##/gps/energy 1460 keV
+##/gps/energy 2614 keV
+
+#/run/beamOn 1000000
+
+
+
+####MoLiOxFmN2016
+/gps/pos/centre 0. 0.0 -12.0 mm 
+/gps/pos/type Volume
+/gps/pos/shape Cylinder
+/gps/pos/inner_radius 45. mm
+/gps/pos/radius 50. mm
+/gps/pos/halfz 70. mm
+/gps/pos/confine MoLiOxFmN2016
+/gps/ang/type iso
+/gps/particle gamma
+/gps/ene/type Mono
+##/gps/ene/mono 186 keV
+##/gps/ene/mono 609 keV
+##/gps/energy 911 keV
+##/gps/energy 1460 keV
+##/gps/energy 2614 keV
+/gps/ene/mono 662 keV
+
+/run/beamOn 100000
